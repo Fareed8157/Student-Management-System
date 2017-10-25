@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="622.0" prefWidth="1121.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainView1_1">
+   <children>
+      <AnchorPane prefHeight="629.0" prefWidth="211.0" style="-fx-background-color: #36394B;">
+         <children>
+            <JFXButton fx:id="student" layoutY="384.0" onAction="#onAction" prefHeight="46.0" prefWidth="200.0" text="Student" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane fx:id="studPic" layoutX="9.0" layoutY="95.0">
+               <children>
+                  <ImageView fitHeight="152.0" fitWidth="187.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="admission" layoutX="1.0" layoutY="430.0" onAction="#onAction" prefHeight="46.0" prefWidth="200.0" text="Admission" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="semester" layoutX="1.0" layoutY="476.0" onAction="#onAction" prefHeight="46.0" prefWidth="200.0" text="Semester" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="challan" layoutX="-1.0" layoutY="522.0" onAction="#onAction" prefHeight="46.0" prefWidth="200.0" text="Challan" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="51.0" layoutY="289.0" text="Modules" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Separator layoutX="15.0" layoutY="335.0" prefHeight="12.0" prefWidth="176.0" />
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="-1.0" layoutY="568.0" prefHeight="46.0" prefWidth="200.0" text="Challan" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="POWER_OFF" layoutX="90.0" layoutY="601.0" size="30" />
+            <Separator layoutX="202.0" layoutY="-5.0" orientation="VERTICAL" prefHeight="626.0" prefWidth="9.0" />
+            <Label fx:id="labelForCategory" layoutX="54.0" layoutY="26.0" text="Student" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Separator layoutX="15.0" layoutY="65.0" prefHeight="36.0" prefWidth="176.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="editStud" layoutX="210.0" layoutY="87.0" prefHeight="542.0" prefWidth="909.0" style="-fx-background-color: #36394B;">
+         <children>
+            <AnchorPane layoutX="96.0" layoutY="82.0" prefHeight="389.0" prefWidth="721.0">
+               <children>
+                  <AnchorPane layoutX="9.0" layoutY="46.0" prefHeight="343.0" prefWidth="709.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #ffffff;">
+                     <children>
+                        <JFXTextField fx:id="sRno1" focusColor="#36394b" labelFloat="true" layoutX="33.0" layoutY="62.0" prefHeight="36.0" prefWidth="268.0" promptText="Roll No" unFocusColor="BLACK">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="sFname1" focusColor="#36394b" labelFloat="true" layoutX="33.0" layoutY="136.0" prefHeight="36.0" prefWidth="268.0" promptText="First Name" unFocusColor="#4a4a4a">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="sLname1" focusColor="#36394b" labelFloat="true" layoutX="33.0" layoutY="214.0" prefHeight="36.0" prefWidth="268.0" promptText="Last Name" unFocusColor="#4a4a4a">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="urlImage1" focusColor="#36394b" labelFloat="true" layoutX="382.0" layoutY="214.0" prefHeight="36.0" prefWidth="205.0" promptText="URL" unFocusColor="#4a4a4a">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="sEmail1" focusColor="#36394b" labelFloat="true" layoutX="381.0" layoutY="136.0" prefHeight="36.0" prefWidth="290.0" promptText="Email" unFocusColor="#4a4a4a">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXDatePicker fx:id="sdob1" defaultColor="#36394b" layoutX="381.0" layoutY="68.0" prefHeight="31.0" prefWidth="290.0" promptText="DOB" />
+                        <JFXButton fx:id="sImage1" layoutX="607.0" layoutY="213.0" prefHeight="46.0" prefWidth="78.0" styleClass="animated-option-button" stylesheets="@browsingButton.css" text="Browse" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXTextField fx:id="sFather1" focusColor="#36394b" labelFloat="true" layoutX="33.0" layoutY="277.0" prefHeight="36.0" prefWidth="268.0" promptText="Father Name" unFocusColor="#4a4a4a">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="sSave1" layoutX="381.0" layoutY="279.0" prefHeight="39.0" prefWidth="290.0" styleClass="animated-option-button" stylesheets="@saveButton.css" text="Save" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CHECK" layoutX="408.0" layoutY="309.0" size="30" />
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane blendMode="DIFFERENCE" layoutX="231.0" prefHeight="78.0" prefWidth="290.0" style="-fx-background-color: #EC407A;">
+                     <children>
+                        <Label layoutX="57.0" layoutY="14.0" text="Student Information" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="addStudAnchor" layoutX="209.0" layoutY="84.0" prefHeight="542.0" prefWidth="909.0" style="-fx-background-color: #36394B;">
+         <children>
+            <AnchorPane layoutX="96.0" layoutY="82.0" prefHeight="389.0" prefWidth="721.0">
+               <children>
+                  <AnchorPane layoutX="9.0" layoutY="46.0" prefHeight="343.0" prefWidth="709.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #ffffff;">
+                     <children>
+                        <JFXTextField fx:id="sRno" focusColor="#36394b" labelFloat="true" layoutX="33.0" layoutY="62.0" prefHeight="36.0" prefWidth="268.0" promptText="Roll No" unFocusColor="BLACK">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="sFname" focusColor="#36394b" labelFloat="true" layoutX="33.0" layoutY="136.0" prefHeight="36.0" prefWidth="268.0" promptText="First Name" unFocusColor="#4a4a4a">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="sLname" focusColor="#36394b" labelFloat="true" layoutX="33.0" layoutY="214.0" prefHeight="36.0" prefWidth="268.0" promptText="Last Name" unFocusColor="#4a4a4a">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="urlImage" focusColor="#36394b" labelFloat="true" layoutX="382.0" layoutY="214.0" prefHeight="36.0" prefWidth="205.0" promptText="URL" unFocusColor="#4a4a4a">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="sEmail" focusColor="#36394b" labelFloat="true" layoutX="381.0" layoutY="136.0" prefHeight="36.0" prefWidth="290.0" promptText="Email" unFocusColor="#4a4a4a">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXDatePicker fx:id="sdob" defaultColor="#36394b" layoutX="381.0" layoutY="68.0" prefHeight="31.0" prefWidth="290.0" promptText="DOB" />
+                        <JFXButton fx:id="sImage" layoutX="607.0" layoutY="213.0" prefHeight="46.0" prefWidth="78.0" styleClass="animated-option-button" stylesheets="@browsingButton.css" text="Browse" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXTextField fx:id="sFather" focusColor="#36394b" labelFloat="true" layoutX="33.0" layoutY="277.0" prefHeight="36.0" prefWidth="268.0" promptText="Father Name" unFocusColor="#4a4a4a">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="sSave" layoutX="381.0" layoutY="279.0" prefHeight="39.0" prefWidth="290.0" styleClass="animated-option-button" stylesheets="@saveButton.css" text="Save" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CHECK" layoutX="408.0" layoutY="309.0" size="30" />
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane blendMode="DIFFERENCE" layoutX="231.0" prefHeight="78.0" prefWidth="290.0" style="-fx-background-color: #EC407A;">
+                     <children>
+                        <Label layoutX="57.0" layoutY="14.0" text="Student Information" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Separator layoutX="1.0" layoutY="-2.0" prefHeight="2.0" prefWidth="909.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="studTableAnchor" layoutX="211.0" layoutY="90.0" prefHeight="536.0" prefWidth="909.0">
+         <children>
+            <TableView layoutX="209.0" layoutY="111.0" prefHeight="536.0" prefWidth="909.0" stylesheets="@tableCss.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn prefWidth="99.0" text="Roll No" />
+                <TableColumn prefWidth="123.0" text="First Name" />
+                  <TableColumn prefWidth="123.0" text="Last Name" />
+                  <TableColumn prefWidth="150.0" text="Mobile" />
+                  <TableColumn prefWidth="129.0" text="DOB" />
+                  <TableColumn prefWidth="156.0" text="Email" />
+                  <TableColumn prefWidth="125.0" text="Father " />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="listOfNodes" layoutX="211.0" prefHeight="91.0" prefWidth="910.0" style="-fx-background-color: #36394B;">
+         <children>
+            <JFXButton fx:id="addStud" contentDisplay="GRAPHIC_ONLY" layoutX="28.0" layoutY="6.0" onMouseClicked="#addStudent" prefHeight="69.0" prefWidth="63.0" styleClass="animated-option-button" stylesheets="@drawerCss.css" text="Button" />
+            <JFXButton fx:id="updateStud" contentDisplay="GRAPHIC_ONLY" layoutX="118.0" layoutY="6.0" onMouseClicked="#updateStudent" styleClass="animated-option-button" stylesheets="@drawerCss.css" />
+            <JFXButton fx:id="refreshStud" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="5.0" onMouseClicked="#refreshStud" styleClass="animated-option-button" stylesheets="@drawerCss.css" />
+            <JFXButton fx:id="delStud" contentDisplay="GRAPHIC_ONLY" layoutX="306.0" layoutY="5.0" onMouseClicked="#delStudent" styleClass="animated-option-button" stylesheets="@drawerCss.css" />
+            <FontAwesomeIconView fx:id="addStudIcon" fill="WHITE" glyphName="PLUS" layoutX="50.0" layoutY="54.0" onMouseClicked="#addStudent" size="30" wrappingWidth="26.999994188547134" />
+            <FontAwesomeIconView fx:id="updStudIcon" fill="WHITE" glyphName="PENCIL" layoutX="140.0" layoutY="52.0" onMouseClicked="#updateStudent" size="30" text="" />
+            <FontAwesomeIconView fx:id="refStudIcon" fill="WHITE" glyphName="REFRESH" layoutX="232.0" layoutY="50.0" onMouseClicked="#refreshStud" size="30" />
+            <MaterialDesignIconView fx:id="delStudIcon" fill="#f2f2f2" glyphName="DELETE" layoutX="326.0" layoutY="52.0" onMouseClicked="#delStudent" size="30" text="" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="admissionTable" layoutX="210.0" layoutY="88.0" prefHeight="536.0" prefWidth="910.0">
+         <children>
+            <TableView layoutX="209.0" layoutY="111.0" prefHeight="536.0" prefWidth="909.0" stylesheets="@tableCss.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn prefWidth="99.0" text="Roll No" />
+                  <TableColumn prefWidth="123.0" text="First Name" />
+                  <TableColumn prefWidth="123.0" text="Last Name" />
+                  <TableColumn prefWidth="150.0" text="Mobile" />
+                  <TableColumn prefWidth="129.0" text="DOB" />
+                  <TableColumn prefWidth="156.0" text="Email" />
+                  <TableColumn prefWidth="125.0" text="Father " />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

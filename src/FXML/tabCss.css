@@ -1,0 +1,45 @@
+.tab-pane *.tab-header-area *.tab-header-background {
+  -fx-background-color:#00897B;
+}
+
+.tab-pane {
+  -fx-tab-min-width:100px;
+  -fx-tab-max-width:100px;
+  -fx-tab-min-height:40px;
+  -fx-tab-max-height:40px;
+}
+
+.tab {
+  -fx-font-family: Arial;
+  -fx-font-size: 15;
+  -fx-background-color:#37474F;
+}
+
+
+
+.tab .tab-label {
+    -fx-skin: "com.sun.javafx.scene.control.skin.LabelSkin";
+    -fx-alignment: CENTER;
+    -fx-text-fill: #B3E5FC;
+}
+.tab-down-button:hover 
+{
+-fx-background-color: -fx-body-color;
+-fx-color: -fx-hover-base;
+}
+
+.tab-pane .headers-region 
+{
+-fx-effect: dropshadow(two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0, 0);
+}
+
+.tab:selected 
+{
+/*    -fx-background-color: white;*/
+/*    -fx-background-color: -fx-tab-border-color, -fx-inner-border, -fx-body-color;
+-fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+-fx-background-insets: 0, 1 1 0 1, 2 2 0 2;*/
+-fx-background-color: -fx-tab-border-color, -fx-control-inner-background;
+-fx-background-insets: 0, 1 1 0 1;
+-fx-background-radius: 5 5 0 0, 4 4 0 0;
+}
